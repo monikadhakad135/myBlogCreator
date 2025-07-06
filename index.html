@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Blog Creator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Blog Creator</h1>
+    <a href="https://github.com/yourusername/yourrepo" target="_blank">Source Code</a>
+  </header>
+
+  <div class="button-section">
+    <button onclick="showForm('manual')">Create Blog Manually</button>
+    <button onclick="showForm('api')">Create Blog Using API</button>
+  </div>
+
+  <div class="form-section">
+    <form id="manualForm" class="center-form">
+      <input type="text" id="manualTitle" placeholder="Enter blog title" required />
+      <textarea id="manualDesc" placeholder="Enter blog description" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <form id="apiForm" class="center-form">
+      <input type="text" id="apiTitle" placeholder="Search blog by title" required />
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <div id="blogCardSection"></div>
+
+  <div class="saved-blogs">
+    <h2>Saved Blogs</h2>
+   <div id="savedBlogs"></div> 
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
